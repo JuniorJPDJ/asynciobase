@@ -66,7 +66,10 @@ class AsyncIOBase(io.IOBase, ABC):
     async def readinto(self, buffer) -> int:
         pass
 
-    async def readline(self, size=-1) -> bytes:
+    async def readline(self, size: int = -1) -> bytes:
+        if size == -1:
+            size = float('inf')
+
         # TODO: should be done better, any ideas?
         if await self.seekable():
             buf = bytearray()
