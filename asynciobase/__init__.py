@@ -2,7 +2,7 @@ import io
 from abc import abstractmethod, ABC
 from typing import List
 
-version = "0.1.0"
+version = "0.2.0"
 
 
 class AsyncIOBase(io.IOBase, ABC):

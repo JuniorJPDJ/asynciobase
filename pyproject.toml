@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "asynciobase"
-version = "0.1.0"
+version = "0.2.0"
 description = "Base class for every async file-like, similar to io.IOBase for sync file-like"
 authors = ["JuniorJPDJ <dev@juniorjpdj.pl>"]
 
